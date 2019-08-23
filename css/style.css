@@ -1,0 +1,24 @@
+
+.side--nav-bar{
+    text-align: center;
+    position: fixed;
+    background-color: royalblue;
+    color: white;
+    width:25%;
+    height:100%;
+}
+.side--nav-bar ul{
+    list-style: none; 
+    /* text-align: center; */
+    font-size: 32px;
+}
+.side--nav-bar a{
+    color:white ;
+}
+.wrapper{
+    margin-left: 27%;
+    width: 70%;
+}
+header{
+    text-align: center;
+}
