@@ -1,24 +1,83 @@
-
+html{
+    scroll-behavior: smooth;
+}
+.wrapper{
+    margin-left: 25%;
+    width: 75%;
+}
 .side--nav-bar{
+    background: rgb(2, 4, 26);
+    border-top: 5px solid blue;
+    color: #ddd;
+    border-right: 1px solid rgb(2, 4, 26);
     text-align: center;
     position: fixed;
-    background-color: royalblue;
-    color: white;
     width:25%;
     height:100%;
+    overflow-y: scroll;
+   
 }
+@media (max-width:760){
+    .side--nav-bar{
+        display: none;
+    }
+}
+.my-name{
+    font-size: 32px;
+    color: #aaa;
+}
+.socials{
+    font-size: 32px;
+    margin-left: -40px;
+}
+.social-link{
+    margin-left: 40px;
+    display: inline;
+}
+.social-link:hover{
+    color: #aaa;
+}
+
 .side--nav-bar ul{
     list-style: none; 
-    /* text-align: center; */
+    text-align: center;
     font-size: 32px;
+    line-height: 2.5;
+    margin-left: -40px;
 }
 .side--nav-bar a{
     color:white ;
+    
 }
-.wrapper{
-    margin-left: 27%;
-    width: 70%;
+.nav-img{
+    border-radius: 50%;
+    height: 35%;
+}
+.nav-links:hover{
+    color: gray;
+    text-decoration: none;
 }
 header{
     text-align: center;
+    background-color: rgb(2, 4, 26);
+    color:#ddd;
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+} 
+h1{
+    color: blue;
+    font-size: 48px;
+
+    animation-name: blinker;
+    animation-duration: 3.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+
