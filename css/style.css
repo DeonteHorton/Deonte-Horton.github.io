@@ -1,5 +1,7 @@
 body{
-    background-color: #FCFCFC;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #aaa;
+    -webkit-text-fill-color: #666;
 }
 html{
     scroll-behavior: smooth;
@@ -7,17 +9,19 @@ html{
 .wrapper{
     margin-left: 25%;
     width: 75%;
+    background: #1f1d20;
+    background: linear-gradient(16deg, #1f1d20 4%, #1f1d20);
+    text-align: center;
+    
 }
-
-
-
 .side--nav-bar{
-    animation: border 3s;
+    animation: border 8s;
     animation-iteration-count:infinite;
-    background: #FCFCFC;
+    background: rgb(0,0,0);
+    background: linear-gradient(204deg, rgba(0,0,0,1) 17%, rgb(54, 54, 54) 49%, #1f1d20 50%, #2e2b30 95%);
     color: #888;
     text-align: center;
-    border-right: 5px solid#F4E04D;
+    border-right: 5px solid black;
     position: fixed;
     padding-top: 5%;
     width:25%;
@@ -25,9 +29,9 @@ html{
     overflow-y: scroll;
 }
 @keyframes border{
-    0%{border-right:5px solid rgb(0, 252, 252)}
-    50%{border-right:5px solid #5EB1BF}
-    100%{border-right:5px solid#54F2F2}
+    0%{border-right:5px solid black}
+    50%{border-right:5px solid #4a4e50;}
+    100%{border-right:5px solid black}
 }
 @media (max-width:760px){
     .side--nav-bar{
@@ -37,6 +41,9 @@ html{
         margin-left: 0%;
         width: 100%;
     }
+}
+.row-padding{
+    padding-top: 40px;
 }
 .my-name{
     font-size: 32px;
@@ -51,7 +58,10 @@ html{
     display: inline;
 }
 .social-link:hover{
-    color: #aaa;
+    font-size:34px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #ccc;
+    -webkit-text-fill-color: #888;
 }
 .side--nav-bar ul{
     list-style: none; 
@@ -61,7 +71,9 @@ html{
     margin-left: -40px;
 }
 .side--nav-bar a{
-    color:rgba(0, 0, 0, 0.76); 
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #aaa;
+    -webkit-text-fill-color: #666;
 }
 .nav-img{
     border-radius: 50%;
@@ -70,23 +82,33 @@ html{
 .nav-links:hover{
     text-decoration: none;
     font-size:33px;
-    color:#54F2F2; 
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #ccc;
+    -webkit-text-fill-color: #888;
 }
 header{
     text-align: center;
-    background-color: rgb(84, 250, 250);
-    color:#ddd;
+    background-color: #000;
 } 
 
 h1{
-    color: #888;
     font-size: 32px;
-    font-style: oblique;
-    text-shadow:black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#666;
+    -webkit-text-fill-color: #222;    
 }
 
 h2{
-    border-left: 5px solid #5EB1BF;
-    padding-left: 5px;
+    
 }
-
+.pic-code{
+    border: 5px solid black;
+    
+}
+.bgi-mac{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    background-image: url(https://media.giphy.com/media/DxOMUVFwaBXEI/giphy-downsized.gif);
+    background-attachment: fixed;
+}
