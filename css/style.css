@@ -2,6 +2,7 @@ body{
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: rgb(211, 211, 211);
     -webkit-text-fill-color: rgb(148, 147, 147);
+    background-color: #1f1d20;
 }
 html{
     scroll-behavior: smooth;
@@ -9,13 +10,24 @@ html{
 .wrapper{
     margin-left: 25%;
     width: 75%;
+    padding-bottom: 2%;
     background-color: #1f1d20;
     background-color: linear-gradient(16deg, #1f1d20 4%, #1f1d20);
     text-align: center;
-    
+    z-index: 1;
+}
+main{
+    animation: slide-in 4.5s;
+    animation-delay: 0.1s;
+    margin-left: 0%;
+    width: 100%;
+}
+@keyframes slide-in{
+    0%{margin-left:-200%}
+    100%{margin-left:0%}
 }
 .side--nav-bar{
-    animation: border 3s;
+    animation: border 2.5s;
     animation-iteration-count:infinite;
     background: #1f1d20;
     background: linear-gradient(204deg, rgba(0,0,0,1) 17%, #2c292e 49%, #2c2a2e 50%, black 95%);
@@ -25,7 +37,7 @@ html{
     position: fixed;
     width:25%;
     height:100%;
-   
+    z-index: 2;
 }
 @keyframes border{
     0%{border-right:5px solid #1f1d20}
@@ -60,12 +72,14 @@ html{
 .social-link{
     margin-left: 40px;
     display: inline;
+    transition: all 0.3s ease-out;
 }
 .social-link:hover{
-    font-size:34px;
+    font-size:40px;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #ccc;
     -webkit-text-fill-color: #888;
+    transition: all 0.3s ease-in-out;
 }
 .side--nav-bar ul{
     list-style: none; 
@@ -78,6 +92,7 @@ html{
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #aaa;
     -webkit-text-fill-color: #666;
+    transition: all 0.5s ease-out;
 }
 .nav-img{
     border-radius: 50%;
@@ -86,10 +101,11 @@ html{
 
 .nav-links:hover{
     text-decoration: none;
-    font-size:33px;
+    font-size:38px;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #ccc;
     -webkit-text-fill-color: #888;
+    transition: all 0.5s ease-in-out;
 }
 header{
     background-color: #1f1d20;
@@ -105,25 +121,32 @@ h1{
          
 }
 @keyframes slow{
-    0%{ font-size: 12px;
-        margin-top:-50px;
-        -webkit-text-stroke-width: 0.5px;
-        -webkit-text-stroke-color:transparent;
-        -webkit-text-fill-color: transparent;
+    0%{ font-size: 36px;
+        margin-left:-100%;
+        opacity: 0.2;
+        }
+        50%{
+            opacity: 0.6;
         }   
     100%{   font-size: 36px;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color:rgb(221, 221, 221);
         -webkit-text-fill-color: transparent;
+        
         }
 }
-
-
 
 .pic-border{
     border: 5px solid black;
     border-radius: 15px;
     box-shadow: 18px 18px 18px rgb(10, 10, 10);
+}
+.project-link {
+    padding: 5px;
+    border: 3px solid white;
+    background-color: #aaa;
+    color: transparent;
+    text-decoration: none;
 }
 
 .bgi-mac{
