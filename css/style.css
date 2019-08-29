@@ -17,17 +17,23 @@ html{
     z-index: 1;
 }
 main{
-    animation: slide-in 4s;
-    animation-delay: 0.1s;
+    animation: slide-in 5s;
+    animation-delay: 0.4s;
     margin-left: 0%;
     width: 100%;
 }
 @keyframes slide-in{
-    0%{margin-left:-200%}
-    100%{margin-left:0%}
+    0%{margin-left:-200%;
+        opacity: 0;
+    }
+    50%{opacity: 0.05;}
+    100%{margin-left:0%;
+        opacity: 1;
+    }
 }
 .side--nav-bar{
-    animation: border 2.5s;
+    animation: border 5s;
+    animation-delay: 4.6s;
     animation-iteration-count:infinite;
     background: #1f1d20;
     background: linear-gradient(204deg, rgba(0,0,0,1) 17%, #2c292e 49%, #2c2a2e 50%, black 95%);
@@ -41,22 +47,8 @@ main{
 }
 @keyframes border{
     0%{border-right:5px solid #1f1d20}
-    50%{border-right:5px solid #2a2a2a}
+    50%{border-right:5px solid rgb(70, 70, 70)}
     100%{border-right:5px solid #1f1d20}
-}
-@media (min-width:768px){
-    .side--nav-bar{
-        padding-top: 10%;
-    }
-}
-@media (max-width:760px){
-    .side--nav-bar{
-        visibility: hidden;
-    }
-    .wrapper{
-        margin-left: 0%;
-        width: 100%;
-    }
 }
 .row-padding{
     padding-top: 40px;
@@ -114,7 +106,7 @@ header{
 h1{
     font-size: 36px;
     font-style: oblique;
-    animation: slow 2.5s;
+    animation: slow 4s;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color:rgb(221, 221, 221);
     -webkit-text-fill-color: transparent;
@@ -160,7 +152,6 @@ h1{
     bottom: 2%;
     left: 35%;
     color:rgba(192, 192, 192, 0.678);
-
 }
 
 .bgi-mac{
@@ -169,4 +160,19 @@ h1{
     background-color: black;
     background-image: url(https://media.giphy.com/media/DxOMUVFwaBXEI/giphy-downsized.gif);
     background-attachment: fixed;
+}
+
+@media (min-width:768px){
+    .side--nav-bar{
+        padding-top: 10%;
+    }
+}
+@media (max-width:760px){
+    .side--nav-bar{
+        visibility: hidden;
+    }
+    .wrapper{
+        margin-left: 0%;
+        width: 100%;
+    }
 }
