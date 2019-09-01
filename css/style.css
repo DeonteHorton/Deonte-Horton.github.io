@@ -17,16 +17,16 @@ html{
     z-index: 1;
 }
 main{
-    animation: slide-in 5s;
+    animation: slide-in 6s;
     animation-delay: 0.4s;
     margin-left: 0%;
     width: 100%;
 }
 @keyframes slide-in{
     0%{margin-left:-200%;
-        opacity: 0;
+        opacity: 0.25;
     }
-    50%{opacity: 0.05;}
+    50%{opacity: 0.75;}
     100%{margin-left:0%;
         opacity: 1;
     }
@@ -68,6 +68,7 @@ main{
 }
 .social-link:hover{
     font-size:40px;
+    text-shadow: 5px 5px 5px rgb(119, 119, 119);
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #ccc;
     -webkit-text-fill-color: #888;
@@ -94,6 +95,7 @@ main{
 .nav-links:hover{
     text-decoration: none;
     font-size:38px;
+    text-shadow: 5px 5px 8px rgb(119, 119, 119);
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #ccc;
     -webkit-text-fill-color: #888;
@@ -106,7 +108,7 @@ header{
 h1{
     font-size: 36px;
     font-style: oblique;
-    animation: slow 4s;
+    animation: slow 6s;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color:rgb(221, 221, 221);
     -webkit-text-fill-color: transparent;
@@ -149,6 +151,7 @@ h1{
 .project-link span:hover{
     transition: all 0.5s ease-in-out;
     font-size: 24px;
+    text-shadow: 4px 4px 7px rgb(119, 119, 119); 
     bottom: 2%;
     left: 35%;
     color:rgba(192, 192, 192, 0.678);
@@ -174,5 +177,10 @@ h1{
     .wrapper{
         margin-left: 0%;
         width: 100%;
+    }
+}
+@media (max-width:1039px){
+    .pro-hide{
+        visibility: hidden;
     }
 }
