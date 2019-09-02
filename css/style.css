@@ -115,14 +115,14 @@ h1{
          
 }
 @keyframes slow{
-    0%{ font-size: 36px;
+    0%{
         margin-left:-100%;
         opacity: 0.2;
         }
         50%{
             opacity: 0.6;
         }   
-    100%{   font-size: 36px;
+    100%{
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color:rgb(221, 221, 221);
         -webkit-text-fill-color: transparent;
@@ -175,8 +175,17 @@ h1{
         visibility: hidden;
     }
     .wrapper{
-        margin-left: 0%;
+        margin:auto;
         width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .gmail{
+        font-size: 24px;
     }
 }
 @media (max-width:1039px){
