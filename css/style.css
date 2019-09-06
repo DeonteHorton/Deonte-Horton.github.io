@@ -1,7 +1,5 @@
 body{
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: rgb(211, 211, 211);
-    -webkit-text-fill-color: rgb(148, 147, 147);
+    color:rgb(167, 167, 167);
     background-color: #1f1d20;
 }
 html{
@@ -60,13 +58,13 @@ main{
 }
 #my-name{
     font-size: 32px;
-    -webkit-text-fill-color: transparent;
+    color:rgb(211, 206, 206);
 }
 .my-name{
     border-bottom: 2px solid #888;
     padding:5px 25px 0px 25px;
     font-size: 32px;
-    -webkit-text-fill-color: transparent;
+    color:rgb(211, 206, 206);
 }
 .socials{
     font-size: 32px;
@@ -77,6 +75,7 @@ main{
     display: inline;
     transition: all 0.3s ease-out;
     color: #888;
+    box-shadow: 2px 2px 2px black;
 }
 .social-link:hover{
     font-size:40px;
@@ -94,9 +93,7 @@ main{
     margin-left: -40px;
 }
 .side--nav-bar a{
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #aaa;
-    -webkit-text-fill-color: #666;
+    color:rgb(167, 167, 167);
     transition: all 0.5s ease-out;
 }
 .nav-img{
@@ -175,21 +172,20 @@ h1{
 }
 
 .project-link span{
-    transition: all 0.5s ease-out;
+    transition: all 0.5s ease-in;
     position: absolute;
     bottom: 5%;
     left: 40%;
-    border-radius: 15px;
-    color:rgba(189, 189, 189, 0.356);
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.877);
 }
 .project-link span:hover{
     visibility: hidden;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-out;
     font-size: 24px;
     text-shadow: 4px 4px 7px rgb(119, 119, 119); 
     bottom: 2%;
     left: 35%;
-    color:rgba(192, 192, 192, 0.678);
 }
 
 .bgi-mac{
@@ -221,7 +217,6 @@ h1{
         bottom: 2%;
         left: 35%;
         border-radius: 15px;
-        color:rgba(189, 189, 189, 0.356);
     }
     .project-link:hover span{
         transition: all 0.5s ease-in-out;
