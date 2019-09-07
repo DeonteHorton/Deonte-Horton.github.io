@@ -75,7 +75,7 @@ main{
     display: inline;
     transition: all 0.3s ease-out;
     color: #888;
-    box-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 3px black;
 }
 .social-link:hover{
     font-size:40px;
@@ -100,7 +100,9 @@ main{
     border-radius: 50%;
     height: 35%;
 }
-
+.nav-links{
+    text-shadow: 3px 3px 3px black;
+}
 .nav-links:hover{
     text-decoration: none;
     font-size:38px;
@@ -140,14 +142,16 @@ h1{
     animation: slow 6s;
     color:gb(221, 221, 221);
     font: bolder;
-         
+    text-shadow: 5px 5px 5px black;   
 }
 h2{
     font-size: 32px;
+    text-shadow: 6px 6px 6px black;
 }
 .about-info{
     font-size: 24px;
-    color:#888
+    color:#888;
+    text-shadow: 3px 3px 3px black;
 }
 @keyframes slow{
     0%{
@@ -170,6 +174,7 @@ h2{
 .project-name{
     font-size: 24px;
     color:#eee;
+    text-shadow: 8px 6px 6px black;
 }
 .pro-bord{
     padding-bottom: 10%;
