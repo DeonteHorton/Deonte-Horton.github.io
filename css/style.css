@@ -128,9 +128,7 @@ nav{
 }
 .mob-link{
     padding: 0 10px;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: rgb(211, 211, 211);
-    -webkit-text-fill-color: rgb(148, 147, 147);
+    color:rgb(167, 167, 167)
 }
 header{
     background-color: #1f1d20;
@@ -140,24 +138,27 @@ h1{
     font-size: 36px;
     font-style: oblique;
     animation: slow 6s;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:rgb(221, 221, 221);
-    -webkit-text-fill-color: transparent;
+    color:gb(221, 221, 221);
+    font: bolder;
          
+}
+h2{
+    font-size: 32px;
+}
+.about-info{
+    font-size: 24px;
+    color:#888
 }
 @keyframes slow{
     0%{
         margin-left:-100%;
-        opacity: 0.2;
+        opacity: 0;
         }
         50%{
-            opacity: 0.6;
+            opacity: 0.1;
         }   
     100%{
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color:rgb(221, 221, 221);
-        -webkit-text-fill-color: transparent;
-        
+        opacity: 1;
         }
 }
 
@@ -165,6 +166,10 @@ h1{
     border: 5px solid black;
     border-radius: 15px;
     box-shadow: 18px 18px 18px rgb(10, 10, 10);
+}
+.project-name{
+    font-size: 24px;
+    color:#eee;
 }
 .pro-bord{
     padding-bottom: 10%;
@@ -210,6 +215,9 @@ h1{
     h1{
         margin-top: 70px;
         font-size: 24px;
+    }
+    .project-name{
+        font-size: 18px;
     }
     .project-link span{
         transition: all 0.5s ease-out;
