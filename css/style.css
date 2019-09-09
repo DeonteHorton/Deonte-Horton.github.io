@@ -1,3 +1,22 @@
+/* This is the rule order that i use */
+/* rule order{
+    animation: ;
+    background-color: ;
+    color: ;
+    font: ;
+    width: ;
+    height: ;
+    margin: ;
+    border: ;
+    padding: ;
+    position: ;
+    text-align: ;
+    z-index: ;
+} */
+
+
+
+
 body{
     color:rgb(167, 167, 167);
     background-color: #1f1d20;
