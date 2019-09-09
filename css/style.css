@@ -5,30 +5,7 @@ body{
 html{
     scroll-behavior: smooth;
 }
-.wrapper{
-    margin-left: 25%;
-    width: 75%;
-    padding-bottom: 2%;
-    background-color: #1f1d20;
-    background-color: linear-gradient(16deg, #1f1d20 4%, #1f1d20);
-    text-align: center;
-    z-index: 1;
-}
-main{
-    animation: slide-in 6s;
-    animation-delay: 0.4s;
-    margin-left: 0%;
-    width: 100%;
-}
-@keyframes slide-in{
-    0%{margin-left:-200%;
-        opacity: 0.25;
-    }
-    50%{opacity: 0.75;}
-    100%{margin-left:0%;
-        opacity: 1;
-    }
-}
+/*\Keeps side navigation to the left and has limited width */
 .side--nav-bar{
     animation: border 5s;
     animation-delay: 4.6s;
@@ -48,24 +25,76 @@ main{
     text-align: center;
     font-size: 12px;
 }
+.side--nav-bar ul{
+    list-style: none; 
+    text-align: center;
+    font-size: 32px;
+    line-height: 2.5;
+    margin-left: -40px;
+}
+.side--nav-bar a{
+    color:rgb(167, 167, 167);
+    transition: all 0.5s ease-out;
+}
+/*\This is the glowing bar in between the side nav and the wrapper */
 @keyframes border{
     0%{border-right:5px solid #1f1d20}
     50%{border-right:5px solid rgb(70, 70, 70)}
     100%{border-right:5px solid #1f1d20}
 }
+/*!This is the glowing bar in between the side nav and the wrapper */
+/*!Keeps side navigation to the left and has limited width */
+
+/*\ the wrapper holds the content to the right of the page until it reaches mobile */
+.wrapper{
+    margin-left: 25%;
+    width: 75%;
+    padding-bottom: 2%;
+    background-color: #1f1d20;
+    background-color: linear-gradient(16deg, #1f1d20 4%, #1f1d20);
+    text-align: center;
+    z-index: 1;
+}
+/*!holds content to the right of the page until it reaches mobile */
+
+/*\the animation that causes the content to have slide-in effect */
+main{
+    animation: slide-in 6s;
+    animation-delay: 0.4s;
+    margin-left: 0%;
+    width: 100%;
+}
+@keyframes slide-in{
+    0%{margin-left:-200%;
+        opacity: 0.25;
+    }
+    50%{opacity: 0.75;}
+    100%{margin-left:0%;
+        opacity: 1;
+    }
+}
+/*!the animation that causes the content to have slide-in effect */
+
 .row-padding{
     padding-top: 40px;
 }
+/*\Name displayed of about of screens width of 768px and above */
 #my-name{
     font-size: 32px;
     color:rgb(211, 206, 206);
 }
+/*!Name displayed of about of screens width of 768px and above */
+
+/*\Name displayed of about of screens width of 767px and below */
 .my-name{
     border-bottom: 2px solid #888;
     padding:5px 25px 0px 25px;
     font-size: 32px;
     color:rgb(211, 206, 206);
 }
+/*!Name displayed of about of screens width of 767px and below */
+
+/*\Linkden and Github links */
 .socials{
     font-size: 32px;
     margin-left: -40px;
@@ -85,21 +114,16 @@ main{
     -webkit-text-fill-color: #888;
     transition: all 0.3s ease-in-out;
 }
-.side--nav-bar ul{
-    list-style: none; 
-    text-align: center;
-    font-size: 32px;
-    line-height: 2.5;
-    margin-left: -40px;
-}
-.side--nav-bar a{
-    color:rgb(167, 167, 167);
-    transition: all 0.5s ease-out;
-}
+/*!Linkden and Github links */
+
+/*\Picture of Deonte */
 .nav-img{
     border-radius: 50%;
     height: 35%;
 }
+/*!Picture of Deonte */
+
+/*\Navagation for screens that have width of 767px and below ONLY */
 .nav-links{
     text-shadow: 3px 3px 3px black;
 }
@@ -130,8 +154,10 @@ nav{
 }
 .mob-link{
     padding: 0 10px;
-    color:rgb(167, 167, 167)
+    color:rgb(167, 167, 167);
 }
+/*!Navagation for screens that have width of 767px and below ONLY */
+
 header{
     background-color: #1f1d20;
     box-shadow: 5px 15px 20px rgb(15,15,15);
@@ -165,48 +191,70 @@ h2{
         opacity: 1;
         }
 }
-
-.pic-border{
-    border: 5px solid black;
-    border-radius: 15px;
-    box-shadow: 18px 18px 18px rgb(10, 10, 10);
-}
-.project-name{
-    font-size: 24px;
-    color:#eee;
-    text-shadow: 8px 6px 6px black;
-}
-.pro-bord{
-    padding-bottom: 10%;
-    position: relative;
-}
-
-.project-link span{
-    transition: all 0.5s ease-in;
-    position: absolute;
-    bottom: 5%;
-    left: 40%;
-    font-size: 16px;
-    color:rgba(255, 255, 255, 0.877);
-}
-.project-link span:hover{
-    visibility: hidden;
-    transition: all 1s ease-out;
-    font-size: 24px;
-    text-shadow: 4px 4px 7px rgb(119, 119, 119); 
-    bottom: 2%;
-    left: 35%;
-}
-
-.bgi-mac{
+.bgi-key{
     width: 100%;
     height: 150px;
     background-color: black;
     background-image: url(https://media.giphy.com/media/DxOMUVFwaBXEI/giphy-downsized.gif);
     background-attachment: fixed;
 }
+/*\border for all pictures except the picture of me */
+.pic-border{
+    border: 5px solid black;
+    border-radius: 15px;
+    box-shadow: 18px 18px 18px rgb(10, 10, 10);
+}
+/*!border for all pictures except the picture of me */
 
-@media (max-width:760px){
+.project-name{
+    font-size: 24px;
+    color:#eee;
+    text-shadow: 8px 6px 6px black;
+}
+
+/*\extended bottom border to put content in it */
+.pro-bord{
+    padding-bottom: 10%;
+    position: relative;
+}
+/*!extended bottom border to put content in it */
+
+/*\links to projects */
+.project-link span{
+    transition: all 0.5s ease-in;
+    position: absolute;
+    bottom: 3%;
+    left: 20%;
+    font-size: 18px;
+    color:rgba(255, 255, 255, 0.877);
+}
+/* hover animation */
+.project-link span:hover{
+    transition: all 0.5s ease-out;
+    font-size: 20px;
+    text-shadow: 4px 4px 7px rgb(119, 119, 119); 
+}
+/*!links to projects */
+
+/*\links to code */
+.project-code span{
+    transition: all 0.5s ease-in;
+    position: absolute;
+    bottom: 3%;
+    left: 70%;
+    font-size: 18px;
+    color:rgba(255, 255, 255, 0.877);
+}
+/* hover animation  */
+.project-code span:hover{
+    transition: all 0.5s ease-out;
+    font-size: 20px;
+    text-shadow: 4px 4px 7px rgb(119, 119, 119); 
+}
+/*!links to code */
+
+/* how i changed the way content items are positioned of the page for different screen sizes */
+@media (max-width:767px){
     .side--nav-bar{
         visibility: hidden;
     }
@@ -228,15 +276,26 @@ h2{
         transition: all 0.5s ease-out;
         position: absolute;
         bottom: 2%;
-        left: 35%;
+        left: 10%;
         border-radius: 15px;
     }
     .project-link:hover span{
         transition: all 0.5s ease-in-out;
         font-size: 16px;
         text-shadow: 4px 4px 7px rgb(119, 119, 119); 
+        color:rgba(192, 192, 192, 0.678);
+    }
+    .project-code span{
+        transition: all 0.5s ease-out;
+        position: absolute;
         bottom: 2%;
-        left: 35%;
+        left: 70%;
+        border-radius: 15px;
+    }
+    .project-link:hover code{
+        transition: all 0.5s ease-in-out;
+        font-size: 16px;
+        text-shadow: 4px 4px 7px rgb(119, 119, 119); 
         color:rgba(192, 192, 192, 0.678);
     }
     
