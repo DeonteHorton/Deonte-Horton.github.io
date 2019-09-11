@@ -294,6 +294,7 @@ h2{
     .project-link span{
         transition: all 0.5s ease-out;
         position: absolute;
+        font-size: 14px;
         bottom: 2%;
         left: 10%;
         border-radius: 15px;
@@ -307,6 +308,7 @@ h2{
     .project-code span{
         transition: all 0.5s ease-out;
         position: absolute;
+        font-size: 14px;
         bottom: 2%;
         left: 70%;
         border-radius: 15px;
