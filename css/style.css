@@ -67,7 +67,7 @@ html{
 /*\ the wrapper holds the content to the right of the page until it reaches mobile */
 .wrapper{
     margin-left: 25%;
-    width: 74%;
+    width: 73%;
     padding-bottom: 2%;
     background-color: #1f1d20;
     background-color: linear-gradient(16deg, #1f1d20 4%, #1f1d20);
